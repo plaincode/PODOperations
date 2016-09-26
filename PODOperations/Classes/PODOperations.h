@@ -10,6 +10,5 @@
 #define PODOperations_h
 
 #import "PODOperation.h"
-#import "PODAsynchronousOperation.h"
 
 #endif /* PODOperations_h */

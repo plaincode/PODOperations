@@ -14,9 +14,7 @@
 		74E05A28C438C09B294FF856773E0D41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		81C7A2AA96BF3E7D277C94380FCB6F1F /* PODOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = E70C9DF23DE3BD210AAD1BF650DEAB64 /* PODOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		85026342CFE0D05696BF65C9CCB06D56 /* PODOperations.h in Headers */ = {isa = PBXBuildFile; fileRef = 63236892262BD108E4F0BBBF0EB9FFC7 /* PODOperations.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		86C45B3D339EDFFA25E38228B18C0DB5 /* PODAsynchronousOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = A3C5641265C6FFAC3FE3A1AC3307D38C /* PODAsynchronousOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		915C9CA28CD3115EDACDB84171FB8266 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		C0F4BF805590F50557D86A8299D486C6 /* PODAsynchronousOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F658F85EF7DC67D1E577A75F18B90EA6 /* PODAsynchronousOperation.m */; };
 		CE13FE53EB0A82BAAC0BB7ECFD05A97C /* Pods-PODOperations_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E8D19C7CAA0404B324C2DEE433FAD3 /* Pods-PODOperations_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D16A1FDBE7E9BE74761235BA5D0990F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		EEAC248460B7BF70A4A0AB2ACF333FA3 /* Pods-PODOperations_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C26AA8B17D6EB590A5EDF0CB26639F /* Pods-PODOperations_Example-dummy.m */; };
@@ -53,7 +51,6 @@
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9AFFF371B870696F4D720F3C28BCC861 /* PODOperations-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PODOperations-umbrella.h"; sourceTree = "<group>"; };
 		A393F8647BA63579D1B7B610B38226FC /* Pods-PODOperations_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PODOperations_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A3C5641265C6FFAC3FE3A1AC3307D38C /* PODAsynchronousOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PODAsynchronousOperation.h; sourceTree = "<group>"; };
 		AB24EBE274D9577C330B335ECC13C0B3 /* Pods-PODOperations_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PODOperations_Example-resources.sh"; sourceTree = "<group>"; };
 		B2C4CF838C62E591471D4EB4BEB76244 /* PODOperations.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PODOperations.xcconfig; sourceTree = "<group>"; };
 		C679023AB54EFFA847C2A6792D7C9F35 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,7 +66,6 @@
 		E725DBDED848A6B2E9DBEEE4E110E118 /* PODOperations-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PODOperations-prefix.pch"; sourceTree = "<group>"; };
 		EAB8D6530F53EAA1D0AA7C40E213888E /* Pods-PODOperations_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PODOperations_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EECA6108A724465B1DB822ABF3FABAA8 /* Pods-PODOperations_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PODOperations_Example-umbrella.h"; sourceTree = "<group>"; };
-		F658F85EF7DC67D1E577A75F18B90EA6 /* PODAsynchronousOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PODAsynchronousOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,8 +203,6 @@
 		D2712CA827281AB7000D18DDA9FDE06D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				A3C5641265C6FFAC3FE3A1AC3307D38C /* PODAsynchronousOperation.h */,
-				F658F85EF7DC67D1E577A75F18B90EA6 /* PODAsynchronousOperation.m */,
 				E70C9DF23DE3BD210AAD1BF650DEAB64 /* PODOperation.h */,
 				5EA29F8A891E39ECC447950E4FC25F1B /* PODOperation.m */,
 				63236892262BD108E4F0BBBF0EB9FFC7 /* PODOperations.h */,
@@ -241,7 +235,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86C45B3D339EDFFA25E38228B18C0DB5 /* PODAsynchronousOperation.h in Headers */,
 				81C7A2AA96BF3E7D277C94380FCB6F1F /* PODOperation.h in Headers */,
 				3BA9861F3968511812B0963B817D46AF /* PODOperations-umbrella.h in Headers */,
 				85026342CFE0D05696BF65C9CCB06D56 /* PODOperations.h in Headers */,
@@ -368,7 +361,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0F4BF805590F50557D86A8299D486C6 /* PODAsynchronousOperation.m in Sources */,
 				FD993D5336C61F727641B976DC73054F /* PODOperation.m in Sources */,
 				2D802E5E604ED9D7B43DE0FBD40C9742 /* PODOperations-dummy.m in Sources */,
 			);

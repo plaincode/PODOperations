@@ -8,6 +8,9 @@
 
 @import XCTest;
 
+#import "PODSynchronousOperationExample.h"
+#import "PODAsynchronousOperationExample.h"
+
 @interface Tests : XCTestCase
 
 @end
@@ -28,7 +31,19 @@
 
 - (void)testExample
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    NSOperationQueue *operationQueue = [[NSOperationQueue alloc] init];
+    PODSynchronousOperationExample *synchronousOperation = [PODSynchronousOperationExample new];
+    [synchronousOperation setCompletionBlock:^{
+        NSLog(@"SynchronousOperation completed");
+    }];
+    [operationQueue addOperation:synchronousOperation];
+    PODAsynchronousOperationExample *asynchronousOperation = [PODAsynchronousOperationExample new];
+    [asynchronousOperation addDependency:synchronousOperation];
+    [asynchronousOperation setCompletionBlock:^{
+        NSLog(@"AsynchronousOperation completed");
+    }];
+    [operationQueue addOperation:asynchronousOperation];
+    [asynchronousOperation waitUntilFinished];
 }
 
 @end
